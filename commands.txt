@@ -1,0 +1,8 @@
+Commands:
+gem install jekyll bundler
+bundle init
+# Then in Gemfile: 
+    gem "jekyll"
+bundle
+# Then 
+bundle exec <command>

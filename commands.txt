@@ -5,4 +5,4 @@ bundle init
     gem "jekyll"
 bundle
 # Then 
-bundle exec <command>
+bundle exec <command, e.g. jekyll serve>

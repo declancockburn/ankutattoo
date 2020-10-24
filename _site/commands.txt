@@ -1,3 +1,5 @@
+NOTE: at 24:24 at this 
+    https://www.youtube.com/watch?v=mEtmJ2xk16g&t=24m20s
 Commands:
 gem install jekyll bundler
 bundle init

@@ -6,3 +6,6 @@ bundle init
 bundle
 # Then 
 bundle exec <command, e.g. jekyll serve>
+
+
+JEKYLL_ENV=production bundle exec jekyll build

@@ -1,5 +1,5 @@
 # markdown: redcarpet
-# baseurl: /jekyll-site-from-scratch
+baseurl: /jekyll-site-from-scratch
 
 collections:
   authors:

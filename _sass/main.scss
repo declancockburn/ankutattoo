@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import 'hero';
 @import 'header';
+@import 'media';
+@import 'animations';
+@import 'about-flx-bx';
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;  
@@ -18,6 +21,22 @@ body {
     
     p {
         margin: 1rem 0;
+    }
+}
+
+#about {
+    .image {
+        max-width: 20vmax;
+        margin: auto;
+
+        img {
+            border: 0.25rem dotted black;
+        }
+    }
+
+    a {
+        min-width: 25vmax;
+        margin: 0.5rem;
     }
 }
 

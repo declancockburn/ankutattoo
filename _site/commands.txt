@@ -1,5 +1,8 @@
 NOTE: at 24:24 at this 
     https://www.youtube.com/watch?v=mEtmJ2xk16g&t=24m20s
+
+    Why is background NOK on github page?
+
 Commands:
 gem install jekyll bundler
 bundle init

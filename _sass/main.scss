@@ -3,13 +3,15 @@
 @import 'header';
 @import 'media';
 @import 'animations';
-@import 'about-flx-bx';
+@import 'about-flex-box';
+@import 'social_icons';
 
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;  
 }
+html, 
 
 body {
     font-family: 'Montserrat', sans-serif;

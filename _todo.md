@@ -1,7 +1,15 @@
-
 ## Todo: 
-* Watch vid on making the animated social-media icons https://www.youtube.com/watch?v=TmnWfWsV0PM 
-* ^ currently at 9:36, in files _social_icons.scss
-* Want grid/boxes in about to order as column instead of row as screen width decreases.
+* (Finished social_media test-page.)
+* Put first social icons in header and fix size, colour etc.
+* Make social icons disappear from header when phone size.
+* ^ Think about where to put them in that case.
+* Add subtitle to home-page.
+* Want grid/boxes in about-page to order as column instead of row as screen width decreases.
 * In hamburger menu, want menu to disappear once menu item is clicked.
-* Make image in about covered by a circle.
+* Look up how to make contact page (and how to prevent spam?)
+* ^ Think about making it booking page? Booking inquiry?
+* Make image in about-page covered by a circle.
+* Make image text go-to once-column once in phone-width (make same as header)
+* Make placeholder gallery page.
+* ^ Add links to instagram and facebook for pictures.
+* Look up how to make gallery page.

@@ -1,7 +1,8 @@
 ## Todo: 
-* (Finished social_media test-page. [This guys's channel](https://www.youtube.com/channel/UCDCHcqyeQgJ-jVSd6VJkbCw))
-* Publish the social media icons page to github https://declancockburn.github.io/jekyll-site-from-scratch/social_media.html (why isn't it? something to do with jekyll?)
-* Put first social icons in header and fix size, colour etc.
+* Take down old site (stop server, but check price first)
+* Redirect ankutattoo to github site. (maybe under construction version?)
+* Put first social icons in header (done) and fix size, colour etc. Anku says make smaller. 
+* Why did bg images bounce before? And can I consciously get it back?
 * Add draft site to social 
 * Make social icons disappear from header when phone size.
 * ^ Think about where to put them in that case.
@@ -15,3 +16,13 @@
 * Make placeholder gallery page.
 * ^ Add links to instagram and facebook for pictures.
 * Look up how to make gallery page.
+
+
+## Notes:
+
+### Social media icons:
+* (Finished social_media test-page. [This guys's channel](https://www.youtube.com/channel/UCDCHcqyeQgJ-jVSd6VJkbCw))
+* Publish to github needs production build command: JEKYLL_ENV=production bundle exec jekyll build
+* 
+
+

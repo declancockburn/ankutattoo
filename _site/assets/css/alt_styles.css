@@ -131,21 +131,37 @@
 
 .versus span { transform: rotate(35deg); }
 
-.sleek__social { width: 30vw; height: 10vh; display: flex; justify-content: space-evenly; align-items: left; text-align: center; }
+body#test .main-header { font-family: 'Montserrat', sans-serif; height: 100vh; width: 100vw; display: flex; flex-direction: column; align-items: center; }
 
-.sleek__social .btn { display: inline-block; background: #dfd8c5; width: 50px; height: 50px; position: relative; overflow: hidden; border-radius: 50%; box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1); }
+body#test .main-header a { text-decoration: none; }
+
+.sleek__social { background: #ecf0f1; width: 100%; display: flex; justify-content: space-evenly; align-items: center; height: 33.33%; text-align: center; }
+
+.sleek__social .btn { display: inline-block; background: #fff; width: 90px; height: 90px; position: relative; overflow: hidden; border-radius: 50%; box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1); }
 
 .sleek__social .btn::before { transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8); content: ''; width: 125%; height: 125%; position: absolute; top: -10%; left: -10%; }
 
-.sleek__social .btn .fab { transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8); position: absolute; width: 100%; height: 100%; top: 0; left: 0; font-size: 2rem; line-height: 50px; }
+.sleek__social .btn .fab { transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8); position: absolute; width: 100%; height: 100%; top: 0; left: 0; font-size: 2.5rem; line-height: 90px; }
 
 .sleek__social .btn__sleek--inactive.facebook::before, .sleek__social .facebook.btn::before { background: #3b5998; }
 
-.sleek__social .btn__sleek--inactive.facebook .fab, .sleek__social .facebook.btn .fab { color: #000; }
+.sleek__social .btn__sleek--inactive.facebook .fab, .sleek__social .facebook.btn .fab { color: #3b5998; }
+
+.sleek__social .btn__sleek--inactive.twitter::before, .sleek__social .twitter.btn::before { background: #3cf; }
+
+.sleek__social .btn__sleek--inactive.twitter .fab, .sleek__social .twitter.btn .fab { color: #3cf; }
+
+.sleek__social .btn__sleek--inactive.youtube::before, .sleek__social .youtube.btn::before { background: #c4302b; }
+
+.sleek__social .btn__sleek--inactive.youtube .fab, .sleek__social .youtube.btn .fab { color: #c4302b; }
 
 .sleek__social .btn__sleek--inactive.instagram::before, .sleek__social .instagram.btn::before { background: #e95950; }
 
-.sleek__social .btn__sleek--inactive.instagram .fab, .sleek__social .instagram.btn .fab { color: #000; }
+.sleek__social .btn__sleek--inactive.instagram .fab, .sleek__social .instagram.btn .fab { color: #e95950; }
+
+.sleek__social .btn__sleek--inactive.linkedin::before, .sleek__social .linkedin.btn::before { background: #0c76a8; }
+
+.sleek__social .btn__sleek--inactive.linkedin .fab, .sleek__social .linkedin.btn .fab { color: #0c76a8; }
 
 .sleek__social .btn__sleek--inactive::before, .sleek__social .btn::before { transform: translate(-100%, -100%) rotate(45deg); }
 
@@ -154,6 +170,112 @@
 .sleek__social .btn__sleek--active::before, .sleek__social .btn:focus::before, .sleek__social .btn:hover::before { transform: translate(0, 0) rotate(45deg); }
 
 .sleek__social .btn__sleek--active .fab, .sleek__social .btn:focus .fab, .sleek__social .btn:hover .fab { color: #fff; transform: scale(1); }
+
+.eight-bit__social { background: #222a2c; width: 100%; display: flex; justify-content: space-evenly; align-items: center; height: 33.33%; text-align: center; }
+
+.eight-bit__social .btn { display: inline-block; background: #fff; width: 90px; height: 90px; position: relative; border-radius: 50%; z-index: 1; }
+
+.eight-bit__social .btn.facebook .fab { color: #3b5998; }
+
+.eight-bit__social .btn.facebook span, .eight-bit__social .btn.facebook span::before, .eight-bit__social .btn.facebook span::after { background: #3b5998; }
+
+.eight-bit__social .btn.twitter .fab { color: #3cf; }
+
+.eight-bit__social .btn.twitter span, .eight-bit__social .btn.twitter span::before, .eight-bit__social .btn.twitter span::after { background: #3cf; }
+
+.eight-bit__social .btn.youtube .fab { color: #c4302b; }
+
+.eight-bit__social .btn.youtube span, .eight-bit__social .btn.youtube span::before, .eight-bit__social .btn.youtube span::after { background: #c4302b; }
+
+.eight-bit__social .btn.instagram .fab { color: #e95950; }
+
+.eight-bit__social .btn.instagram span, .eight-bit__social .btn.instagram span::before, .eight-bit__social .btn.instagram span::after { background: #e95950; }
+
+.eight-bit__social .btn.linkedin .fab { color: #0c76a8; }
+
+.eight-bit__social .btn.linkedin span, .eight-bit__social .btn.linkedin span::before, .eight-bit__social .btn.linkedin span::after { background: #0c76a8; }
+
+.eight-bit__social .btn .fab { position: absolute; width: 100%; height: 100%; top: 0; left: 0; line-height: 90px; font-size: 2.5rem; transform: scale(0.8); transition: all 0.35s; }
+
+.eight-bit__social .btn .outside span { position: absolute; display: block; opacity: 0; transform: scale(0); }
+
+.eight-bit__social .btn .outside span::before, .eight-bit__social .btn .outside span::after { content: ''; position: absolute; display: block; width: 8px; height: 8px; }
+
+.eight-bit__social .btn .outside span:nth-child(2), .eight-bit__social .btn .outside span:nth-child(4) { top: 25px; height: 40px; width: 8px; }
+
+.eight-bit__social .btn .outside span:nth-child(2)::before, .eight-bit__social .btn .outside span:nth-child(2)::after, .eight-bit__social .btn .outside span:nth-child(4)::before, .eight-bit__social .btn .outside span:nth-child(4)::after { height: 16px; }
+
+.eight-bit__social .btn .outside span:nth-child(1), .eight-bit__social .btn .outside span:nth-child(3) { left: 25px; width: 40px; height: 8px; }
+
+.eight-bit__social .btn .outside span:nth-child(1)::before, .eight-bit__social .btn .outside span:nth-child(1)::after, .eight-bit__social .btn .outside span:nth-child(3)::before, .eight-bit__social .btn .outside span:nth-child(3)::after { width: 16px; }
+
+.eight-bit__social .btn .outside span:nth-child(2)::before, .eight-bit__social .btn .outside span:nth-child(4)::before, .eight-bit__social .btn .outside span:nth-child(3)::before, .eight-bit__social .btn .outside span:nth-child(3)::after { top: -8px; }
+
+.eight-bit__social .btn .outside span:nth-child(1)::after, .eight-bit__social .btn .outside span:nth-child(3)::after, .eight-bit__social .btn .outside span:nth-child(4)::before, .eight-bit__social .btn .outside span:nth-child(4)::after { right: -8px; }
+
+.eight-bit__social .btn .outside span:nth-child(2)::after, .eight-bit__social .btn .outside span:nth-child(4)::after, .eight-bit__social .btn .outside span:nth-child(1)::before, .eight-bit__social .btn .outside span:nth-child(1)::after { bottom: -8px; }
+
+.eight-bit__social .btn .outside span:nth-child(1)::before, .eight-bit__social .btn .outside span:nth-child(3)::before, .eight-bit__social .btn .outside span:nth-child(2)::before, .eight-bit__social .btn .outside span:nth-child(2)::after { left: -8px; }
+
+.eight-bit__social .btn .outside span:nth-child(1) { top: -4px; }
+
+.eight-bit__social .btn .outside span:nth-child(2) { right: -4px; }
+
+.eight-bit__social .btn .outside span:nth-child(3) { bottom: -4px; }
+
+.eight-bit__social .btn .outside span:nth-child(4) { left: -4px; }
+
+.eight-bit__social .btn .inside { position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: -1; overflow: hidden; border-radius: 50%; }
+
+.eight-bit__social .btn .inside span { position: relative; display: block; left: -15px; height: 20px; width: 0; }
+
+.eight-bit__social .btn .inside span::after { content: ''; position: absolute; display: block; right: -10px; width: 10px; height: 10px; background: #fff; }
+
+.eight-bit__social .btn .inside span:nth-child(odd)::after { background: rgba(0, 0, 0, 0.4); }
+
+.eight-bit__social .btn .inside span:nth-child(1) { left: -75px; transition: all 0.3s steps(8); }
+
+.eight-bit__social .btn .inside span:nth-child(2) { left: -45px; transition: all 0.325s steps(8); }
+
+.eight-bit__social .btn .inside span:nth-child(3) { left: -55px; transition: all 0.35s steps(8); }
+
+.eight-bit__social .btn .inside span:nth-child(4) { transition: all 0.4s steps(8); }
+
+.eight-bit__social .btn .inside span:nth-child(5) { left: -25px; transition: all 0.375s steps(8); }
+
+.eight-bit__social .btn:hover .fab { color: #fff; transform: scale(1); }
+
+.eight-bit__social .btn:hover .outside span { opacity: 1; transform: scale(1.15); }
+
+.eight-bit__social .btn:hover .outside span:nth-child(1), .eight-bit__social .btn:hover .outside span:nth-child(3) { transition: transform 0.3s 0.1s steps(8); }
+
+.eight-bit__social .btn:hover .outside span:nth-child(2) { transition: transform 0.3s 0.2s steps(8); }
+
+.eight-bit__social .btn:hover .outside span:nth-child(4) { transition: transform 0.3s steps(8); }
+
+.eight-bit__social .btn:hover .inside span:nth-child(1) { width: calc(100% + 76px); }
+
+.eight-bit__social .btn:hover .inside span:nth-child(2) { width: calc(100% + 46px); transition: all 0.375s steps(8); }
+
+.eight-bit__social .btn:hover .inside span:nth-child(3) { width: calc(100% + 56px); transition: all 0.35s steps(8); }
+
+.eight-bit__social .btn:hover .inside span:nth-child(4) { width: calc(100% + 16px); transition: all 0.3s steps(8); }
+
+.eight-bit__social .btn:hover .inside span:nth-child(5) { width: calc(100% + 26px); transition: all 0.325s steps(8); }
+
+.glitchy__social { background: #000; width: 100%; display: flex; justify-content: space-evenly; align-items: center; height: 33.33%; text-align: center; }
+
+.glitchy__social .btn { display: inline-block; width: 90px; height: 90px; position: relative; }
+
+.glitchy__social .btn .fab { color: #fff; font-size: 4rem; line-height: 90px; }
+
+.glitchy__social .btn:focus .fab, .glitchy__social .btn:hover .fab { animation: glitchy 200ms infinite; }
+
+@keyframes glitchy { 0% { text-shadow: 5px 4px #f44336, -5px -6px #2196f3; }
+  25% { text-shadow: -5px -6px #f44336, 5px 4px #2196f3; }
+  50% { text-shadow: 5px -4px #f44336, -8px 4px #2196f3; }
+  75% { text-shadow: -8px -4px #f44336, -5px -4px #2196f3; }
+  100% { text-shadow: -5px 0 #f44336, 5px -4px #2196f3; } }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -171,4 +293,4 @@ html, body { font-family: 'Montserrat', sans-serif; }
 
 .current { color: green; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=alt_styles.css.map */

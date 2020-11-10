@@ -1,47 +1,50 @@
-body#test {
-  font-family: 'Montserrat', sans-serif;
-  //additional:
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  ///additional
-  
-  a {
-    text-decoration: none;
-  }
-}
+// .social-header {
+//   font-family: 'Montserrat', sans-serif;
+//   //additional:
+//   height: 50vh;
+//   width: 50vw;
+//   display: flex;
+//   flex-direction: row;
+//   align-items: left;
+//   ///additional
+//   a {
+//     text-decoration: none;
+//   }
+// }
 
 
-$btn-size: 90px;
+$btn-size: 50px;
 $colours: (
   'facebook': #3b5998,
-  'twitter': #3cf,
-  'youtube': #c4302b,
+  // 'twitter': #3cf,
+  // 'youtube': #c4302b,
   'instagram': #e95950,
-  'linkedin': #0c76a8,
+  // 'linkedin': #0c76a8,
 );
 $gl1: #f44336;
 $gl2: #2196f3;
+$bg1: #dfd8c5;
 
 @mixin animate-bouncey {
   transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
 }
 
 .sleek__social {
-  background: #ecf0f1;
-  width: 100%;
+  // background: #ecf0f1;
+  width: 30vw;
+  height: 10vh;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  height: 33.33%;
+  align-items: left;
+
   text-align: center;
+  // align-items: left;
 
   .btn {
     @extend .btn__sleek--inactive;
     display: inline-block;
-    background: #fff;
+    // background: #fff;
+    background: $bg1;
     width: $btn-size;
     height: $btn-size;
     position: relative;
@@ -65,7 +68,7 @@ $gl2: #2196f3;
       height: 100%;
       top: 0;
       left: 0;
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: $btn-size;
     }
 
@@ -82,7 +85,8 @@ $gl2: #2196f3;
           background: $colour;
         }
         .fab {
-          color: $colour;
+          color: #000;
+          // color: $colour;
         }
       }
     }
@@ -104,280 +108,5 @@ $gl2: #2196f3;
       color: #fff;
       transform: scale(1);
     }
-  }
-}
-
-.eight-bit__social {
-  background: #222a2c;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 33.33%;
-  text-align: center;
-
-  .btn {
-    display: inline-block;
-    background: #fff;
-    width: $btn-size;
-    height: $btn-size;
-    position: relative;
-    border-radius: 50%;
-    z-index: 1;
-
-    @each $name, $colour in $colours {
-      &.#{$name} { //goes through each facebook/twit etc.
-        .fab {
-          color: $colour;
-        }
-        span,
-        span::before,
-        span::after {
-          background: $colour;
-        }
-      }
-    }
-
-    .fab {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      line-height: $btn-size;
-      font-size: 2.5rem;
-      transform: scale(0.8);
-      transition: all 0.35s;
-    }
-    
-    .outside {
-      span {
-        position: absolute;
-        display: block;
-        opacity: 0;
-        transform: scale(0);
-        
-        &::before,
-        &::after {
-          content: '';
-          position: absolute;
-          display: block;
-          width: 8px;
-          height: 8px;
-        }
-      }
-      span:nth-child(2),
-      span:nth-child(4) {
-        top: 25px;
-        height: 40px;
-        width: 8px;
-        // background: yellow;
-
-        &::before,
-        &::after {
-          height: 16px;
-          // background: pink;
-        }
-      }
-
-      span:nth-child(1),
-      span:nth-child(3) {
-        left: 25px;
-        width: 40px;
-        height: 8px;
-        // background: blue;
-
-        &::before,
-        &::after {
-          width: 16px;
-          // background: green;
-        }
-      }
-
-      span:nth-child(2)::before,
-      span:nth-child(4)::before,
-      span:nth-child(3)::before,
-      span:nth-child(3)::after {
-        top: -8px;
-      }
-
-      span:nth-child(1)::after,
-      span:nth-child(3)::after,
-      span:nth-child(4)::before,
-      span:nth-child(4)::after {
-        right: -8px;
-      }
-
-      span:nth-child(2)::after,
-      span:nth-child(4)::after,
-      span:nth-child(1)::before,
-      span:nth-child(1)::after {
-        bottom: -8px;
-      }
-
-      span:nth-child(1)::before,
-      span:nth-child(3)::before,
-      span:nth-child(2)::before,
-      span:nth-child(2)::after {
-        left: -8px;
-      }
-
-      span:nth-child(1) {
-        top: -4px;
-      }
-      span:nth-child(2) {
-        right: -4px;
-      }
-      span:nth-child(3) {
-        bottom: -4px;
-      }
-      span:nth-child(4) {
-        left: -4px;
-      }
-    }
-    .inside {
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: -1;
-      overflow: hidden;
-      border-radius: 50%;
-
-      span {
-        position: relative;
-        display: block;
-        left: -15px;
-        height: 20px;
-        width: 0;
-
-        &::after {
-          content: '';
-          position: absolute;
-          display: block;
-          right: -10px;
-          width: 10px;
-          height: 10px;
-          background: #fff;
-        }
-      }
-
-      span:nth-child(odd){
-        &::after {
-          background: rgba(#000, 0.4);
-        }
-      }
-      span:nth-child(1) {
-        left: -75px;
-        transition: all 0.3s steps(8);
-      }
-      span:nth-child(2) {
-        left: -45px;
-        transition: all 0.325s steps(8);
-      }
-      span:nth-child(3) {
-        left: -55px;
-        transition: all 0.35s steps(8);
-      }
-      span:nth-child(4) {
-        transition: all 0.4s steps(8);
-      }
-      span:nth-child(5) {
-        left: -25px;
-        transition: all 0.375s steps(8);
-      }
-    }
-
-    &:hover {
-      .fab {
-        color: #fff;
-        transform: scale(1);
-      }
-      .outside {
-        span {
-          opacity: 1;
-          transform: scale(1.15);
-        }
-        span:nth-child(1),
-        span:nth-child(3) {
-          transition: transform 0.3s 0.1s steps(8);
-        }
-        span:nth-child(2) {
-          transition: transform 0.3s 0.2s steps(8);
-        }
-        span:nth-child(4) {
-          transition: transform 0.3s steps(8);
-        }
-      }
-
-      .inside {
-        span:nth-child(1) {
-          width: calc(100% + 76px);
-        }
-        span:nth-child(2) {
-          width: calc(100% + 46px);
-          transition: all 0.375s steps(8);
-        }
-        span:nth-child(3) {
-          width: calc(100% + 56px);
-          transition: all 0.35s steps(8);
-        }
-        span:nth-child(4) {
-          width: calc(100% + 16px);
-          transition: all 0.3s steps(8);
-        }
-        span:nth-child(5) {
-          width: calc(100% + 26px);
-          transition: all 0.325s steps(8);
-        }
-      }
-    }
-  }
-}
-
-.glitchy__social {
-  background: #000;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 33.33%;
-  text-align: center;
-
-  .btn {
-    display: inline-block;
-    width: $btn-size;
-    height: $btn-size;
-    position: relative;
- 
-    .fab {
-      color: #fff;
-      font-size: 4rem;
-      line-height: $btn-size;
-    }
-
-    &:focus .fab,
-    &:hover .fab {
-      animation: glitchy 200ms infinite;
-    }
-  }
-  @keyframes glitchy {
-   0% {
-     text-shadow: 5px 4px $gl1, -5px -6px $gl2;
-   } 
-   25% {
-     text-shadow: -5px -6px $gl1, 5px 4px $gl2;
-   } 
-   50% {
-     text-shadow: 5px -4px $gl1, -8px 4px $gl2;
-   } 
-   75% {
-     text-shadow: -8px -4px $gl1, -5px -4px $gl2;
-   } 
-   100% {
-     text-shadow: -5px 0 $gl1, 5px -4px $gl2;
-   } 
-
   }
 }

@@ -1,6 +1,6 @@
 ## Todo: 
-* Take down old site (stop server, but check price first)
-* Redirect ankutattoo to github site. (maybe under construction version?)
+* Take down old site (stop server)
+* WWW version unsecured but no www secured, check if still the case and troubleshoot.
 * Put first social icons in header (done) and fix size, colour etc. Anku says make smaller. 
 * Why did bg images bounce before? And can I consciously get it back?
 * Add draft site to social 

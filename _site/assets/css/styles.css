@@ -155,9 +155,9 @@
 
 .sleek__social .btn__sleek--active .fab, .sleek__social .btn:focus .fab, .sleek__social .btn:hover .fab { color: #fff; transform: scale(1); }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
 
-html, body { font-family: 'Montserrat', sans-serif; }
+*, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
 
 .container { width: 80%; margin: 2rem auto; }
 

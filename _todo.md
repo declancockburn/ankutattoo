@@ -1,8 +1,7 @@
 ## Todo: 
-* Take down old site (stop server)
-* WWW version unsecured but no www secured, check if still the case and troubleshoot. (now reversed depending on whether the custom domain in github has www (then www ok)) Seems to be OK now!!??
-* Put first social icons in header (done) and fix size, colour etc. Anku says make smaller. 
-* 
+* Make other placeholder pages: 
+* Site icon.
+* Page title.
 * Why did bg images bounce before? And can I consciously get it back?
 * Add draft site to social 
 * Make social icons disappear from header when phone size.
@@ -18,6 +17,9 @@
 * ^ Add links to instagram and facebook for pictures.
 * Look up how to make gallery page.
 
+
+## Done/semi-done
+* Put first social icons in header (done) and fix size, colour etc. Anku says make smaller. 
 
 ## Notes:
 

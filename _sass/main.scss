@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 @import 'hero';
 @import 'header';
+@import 'menu_phone_animations';
 @import 'menu_phone';
-@import 'animations';
 @import 'about-flex-box';
 @import 'social_icons';
 
@@ -10,6 +10,7 @@ html,
 body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    // font-family: "Times New Roman", Times, serif;
     //additional:
     // height: 100vh;
     // width: 100vw;

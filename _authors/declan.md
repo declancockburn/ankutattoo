@@ -1,7 +1,7 @@
 ---
 short_name: Declan
 name: Declan Cockburn
-position: World Conquerer and slayer in the sack
+position: World Conquerer
 ---
 
 Just a fantastic fellow.

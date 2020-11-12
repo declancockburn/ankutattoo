@@ -34,7 +34,13 @@ $bg1: #dfd8c5;
   width: 30vw;
   height: 10vh;
   display: flex;
-  justify-content: space-evenly;
+  // padding: 100px;
+  // margin: 100px;
+  // border: 100px;
+  // margin-right: 100px;
+  // margin-left: 100px;
+  // justify-content: space-evenly;
+  justify-content: start;
   align-items: left;
 
   text-align: center;
@@ -49,6 +55,7 @@ $bg1: #dfd8c5;
     height: $btn-size;
     position: relative;
     overflow: hidden;
+    margin-right: 10px;
     border-radius: 50%;
     box-shadow: 0 5px 50px 35px rgba(0,0,0,0.1);
 

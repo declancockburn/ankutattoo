@@ -131,9 +131,9 @@
 
 .versus span { transform: rotate(35deg); }
 
-.sleek__social { width: 30vw; height: 10vh; display: flex; justify-content: space-evenly; align-items: left; text-align: center; }
+.sleek__social { width: 30vw; height: 10vh; display: flex; justify-content: start; align-items: left; text-align: center; }
 
-.sleek__social .btn { display: inline-block; background: #dfd8c5; width: 50px; height: 50px; position: relative; overflow: hidden; border-radius: 50%; box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1); }
+.sleek__social .btn { display: inline-block; background: #dfd8c5; width: 50px; height: 50px; position: relative; overflow: hidden; margin-right: 10px; border-radius: 50%; box-shadow: 0 5px 50px 35px rgba(0, 0, 0, 0.1); }
 
 .sleek__social .btn::before { transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8); content: ''; width: 125%; height: 125%; position: absolute; top: -10%; left: -10%; }
 

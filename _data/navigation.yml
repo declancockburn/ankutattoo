@@ -2,8 +2,10 @@
   link: /
 - name: About
   link: /#about
-- name: Test1
-  link: /#test1
-- name: Test2
-  link: /test.html
+- name: Art
+  link: /art.html
+- name: Contact
+  link: /contact.html
+- name: Book
+  link: /book.html
 

@@ -45,9 +45,11 @@
 
                 a {
                     display: block;
-                    padding: 2rem 0;
+                    padding: 1.5rem 0;
+                    // padding: 2rem 0;
                 }
             }
+
         }
         // when menu button is checked, the sister is ~ 
         // (nav-links is same level as menu-btn but after)
@@ -68,6 +70,11 @@
                     }
                 }
             }
+            // .nav-link:target {
+            //     opacity: 0;
+            //     left:0;
+            //     transition-delay:0; 
+            // }  
         }
 
         .menu-btn:checked ~ .menu-icon {

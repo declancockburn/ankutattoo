@@ -1,7 +1,14 @@
 ## Todo: 
+* New design: 
+* Change font to Source Serif Variable (if I can find?)
+* Put in images left and right. Put in background colour.
+* Put icon in the middle.
+* Icons move
+*
 * Make other placeholder pages: 
 * Site icon.
 * Page title.
+* Make alternative hero page with just icon
 * Why did bg images bounce before? And can I consciously get it back?
 * Add draft site to social 
 * Make social icons disappear from header when phone size.
@@ -16,6 +23,7 @@
 * Make placeholder gallery page.
 * ^ Add links to instagram and facebook for pictures.
 * Look up how to make gallery page.
+* Put in who it's coded by and how.
 
 
 ## Done/semi-done

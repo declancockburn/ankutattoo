@@ -11,6 +11,7 @@ bundle init
 bundle
 # Then 
 bundle exec <command, e.g. jekyll serve>
+bundle exec jekyll serve
 
 # This is to push for production:
 JEKYLL_ENV=production bundle exec jekyll build

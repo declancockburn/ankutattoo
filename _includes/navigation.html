@@ -17,12 +17,12 @@
         {% for item in site.data.navigation %}
             <li class='nav-link'>
                 <!-- <label for='menu-btn' class='toggle'> -->
-                    <!-- <a href="{{site.url}}{{site.baseurl}}{{ item.link }}"{% if page.url == item.link %}class="current"{% endif %}>
-                        {{ item.name }}
-                    </a> -->
-                    <a href="{{site.url}}{{site.baseurl}}{{ item.link }}" class=>
+                    <a href="{{site.url}}{{site.baseurl}}{{ item.link }}"{% if page.url == item.link %}class="current"{% endif %}>
                         {{ item.name }}
                     </a>
+                    <!-- <a href="{{site.url}}{{site.baseurl}}{{ item.link }}">
+                        {{ item.name }}
+                    </a> -->
                 <!-- </label> -->
             </li>
         {% endfor %}

@@ -2,9 +2,16 @@
 relative_url: 
 # theme: alembic-jekyll-theme
 
-collections:
-  authors:
-    output: true
+# collections:
+#   authors:
+#     output: true
+title: Anku Art & Tattoos Eindhoven
+email: 
+baseurl: ""
+
+# Build settings:
+markdown: kramdown
+
 
 plugins:
   - jekyll-feed

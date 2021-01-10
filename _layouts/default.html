@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <title>{{ page.title }}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{site.url}}{{site.baseurl}}/assets/css/styles.css">
     {% feed_meta %}
     {% seo %}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
   </head>
   <body>
     {% include navigation.html %}

@@ -1,4 +1,4 @@
-
+I"Q
 <!-- 
     Todo: 
     1) Want grid/boxes in about to order as column instead of row as screen width decreases.
@@ -9,7 +9,7 @@
     <div class="column item-1">
       <!-- <h3>column 1</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nisi dicta sed eaque beatae quibusdam sit autem iure nulla sequi doloremque assumenda cupiditate animi illum optio quos velit officiis voluptates.</p> -->
-      <img src="{{site.url}}{{site.baseurl}}/assets/img/anku_tattooing_1.png">
+      <img src="/assets/img/anku_tattooing_1.png" />
     </div>
     <!-- <div class="column item-mid"></div> -->
     <div class="construction">
@@ -24,8 +24,6 @@
   </div>
 </section>
 
-
-
 <!-- <div class="container">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -35,3 +33,5 @@
     nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
     sunt in culpa qui officia deserunt mollit anim id est laborum.
     </div> -->
+
+:ET

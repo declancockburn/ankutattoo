@@ -66,6 +66,14 @@
     // width: 100%;
     // vertical-align: middle;
 }
+
+.construction {
+    background-color: yellow;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 @media (max-width: 600px) {
     .column {
         flex-basis: 70%;

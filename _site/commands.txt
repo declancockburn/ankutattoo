@@ -1,5 +1,5 @@
 NOTE: at 24:24 at this 
-    https://www.youtube.com/watch?v=mEtmJ2xk16g&t=24m20s
+    
 
     Why is background NOK on github page?
 
@@ -9,9 +9,12 @@ bundle init
 # Then in Gemfile: 
     gem "jekyll"
 bundle
-# Then 
-bundle exec <command, e.g. jekyll serve>
+
+
+# Then to run in local-host:
 bundle exec jekyll serve
+or 
+jekyll s
 
 # This is to push for production:
 JEKYLL_ENV=production bundle exec jekyll build

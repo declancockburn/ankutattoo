@@ -1,3 +1,12 @@
+## Design tips
+1. Split the content up into groups
+2. Increase contrast through font-size
+3. Increase contrast through font-weight
+4. Increase contrast through color
+5. Increase the line-height of the body
+6. Decrease the line-height of large text
+
+
 ## Layout
 
 

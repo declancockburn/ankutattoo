@@ -2,10 +2,6 @@
     $bg1: #dfd8c5;
     height: 100vh;
     width: 100vw;
-    // background: url('../img/background_test.jpeg') no-repeat bottom center;
-    // background: url('../img/bg_no_logo.jpg') no-repeat bottom center;
-    // // background: url('{{site.url}}{{site.baseurl}}/assets/img/background_test.jpeg') no-repeat bottom center;
-    // background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,21 +22,30 @@
         background-color: $bg1;
     }
 
-    img {
-        margin: auto;
-        padding: calc(25vh + 30px) 0;
-        display: block;
-        width: calc(10vw + 100px);
-        text-align: center;
-    }
     h1 {
         position: relative;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-transform: uppercase;
         text-align: center;
-        background: rgba(0,0,0,0.2);
-        padding: 2rem;
-        border-radius: 20px 0;
+
+        img {
+            margin: auto;
+            display: block;
+            width: calc(10vw + 100px);
+            text-align: center;
+        }
+
+        &::after {
+            content: 'Eindhoven';
+            display: block;
+            height: 100%;
+            opacity: 0;
+            transition: opacity ease-out 250ms; 
+        }
+
+        &:hover:after {
+            opacity: 1;
+        }
     }
 
 

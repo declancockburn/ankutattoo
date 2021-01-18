@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-html { font-size: 100%; box-sizing: border-box; }
+html { box-sizing: border-box; }
 
 body { margin: 0; padding: 0; font-family: 'Montserrat', serif; background-color: #dfd8c5; }
 
@@ -198,5 +198,7 @@ body { margin: 0; padding: 0; font-family: 'Montserrat', serif; background-color
 #about .image img { border: 0.25rem dotted black; }
 
 #about a { min-width: 25vmax; margin: 0.5rem; }
+
+.current { color: green; }
 
 /*# sourceMappingURL=styles.css.map */

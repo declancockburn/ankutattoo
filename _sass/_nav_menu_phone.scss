@@ -1,23 +1,6 @@
-// iPad is 768px
-@media screen and (max-width: 767px) {
-    .main-header{
-        .menu-icon {
-            display: block;
-            
-            &__line {
-                animation: closedMid 0.8s backwards;
-                animation-direction: reverse;
 
-                &::before {
-                    animation: closedTop 0.8s backwards;
-                    animation-direction: reverse;
-                }
-                &::after {
-                    animation: closedBtm 0.8s backwards;
-                    animation-direction: reverse;
-                }
-            }
-        }
+@include breakpoint-down(small) {
+    .main-header{
         .nav-links {
             position: absolute;
             top: 0;
@@ -51,6 +34,25 @@
             }
 
         }
+
+        .menu-icon {
+            display: block;
+            
+            &__line {
+                animation: closedMid 0.8s backwards;
+                animation-direction: reverse;
+
+                &::before {
+                    animation: closedTop 0.8s backwards;
+                    animation-direction: reverse;
+                }
+                &::after {
+                    animation: closedBtm 0.8s backwards;
+                    animation-direction: reverse;
+                }
+            }
+        }
+        
         // when menu button is checked, the sister is ~ 
         // (nav-links is same level as menu-btn but after)
         .menu-btn:checked ~ .nav-links {
@@ -96,7 +98,7 @@
             }
         }
     }
-    .hero h1 {
-        font-size: 1rem;
-    }
+    // .hero h1 {
+    //     font-size: 1rem;
+    // }
 }

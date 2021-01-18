@@ -1,8 +1,8 @@
 .main-header {
     position: fixed;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // justify-content: space-between;
+    // align-items: center;
     height: 65px;
     width: 100vw;
     padding: 0 10vw;
@@ -29,7 +29,7 @@
                 &:nth-of-type(#{$i}) {
                     transition-delay: .0s + $i*.1s;
                 }
-                }
+            }
             a {
                 margin: 0.2rem;
                 padding: 1rem .5rem;

@@ -12,10 +12,6 @@
 //   }
 // }
 
-@mixin animate-bouncey {
-  transition: all 0.35s cubic-bezier(0.31, -0.205, 0.43, 1.8);
-}
-
 .sleek__social {
   // background: #ecf0f1;
   width: 30vw;

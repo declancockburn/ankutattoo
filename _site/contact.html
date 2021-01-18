@@ -44,23 +44,20 @@
 
 <!-- end clip --> </head>
   <body>
-    <nav class="main-header">
-    <!-- <div class="social-header"> -->
-        <div class="sleek__social">
+    <nav class="main-header flex flex-jc-sb flex-ai-c">
+    <div class="sleek__social">
             <a href="https://www.instagram.com/ankutattooist/" class="btn instagram">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="https://facebook.com/ankutattooist" class="btn facebook">
                 <i class="fab fa-facebook-f"></i>
             </a>
-        <!-- </div> -->	       
     </div>
-
-    <input type='checkbox' class='menu-btn' id='menu-btn'>
-    <label for='menu-btn' class='menu-icon', id='menu-icon'>
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label for="menu-btn" class="menu-icon" id="menu-icon">
         <span class="menu-icon__line"></span>
     </label>
-    <ul class='nav-links'> 
+    <ul class="nav-links"> 
         
             <li class='nav-link'>
                 <!-- <label for='menu-btn' class='toggle'> -->
@@ -75,10 +72,10 @@
         
             <li class='nav-link'>
                 <!-- <label for='menu-btn' class='toggle'> -->
-                    <a href="/#about">
+                    <a href="/#about2">
                         About
                     </a>
-                    <!-- <a href="/#about">
+                    <!-- <a href="/#about2">
                         About
                     </a> -->
                 <!-- </label> -->
@@ -161,19 +158,22 @@
     1) Want grid/boxes in about to order as column instead of row as screen width decreases.
     2) In hamburger menu, want menu to disappear once menu item is clicked.
  -->
-<section id="about">
-  <div class="row-1">
-    <div class="column item-1">
+<section id="about" class="content_page">
+  <div class="grid">
+    <div class="item_left content">
       <!-- <h3>column 1</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nisi dicta sed eaque beatae quibusdam sit autem iure nulla sequi doloremque assumenda cupiditate animi illum optio quos velit officiis voluptates.</p> -->
       <div class="mapouter">
         <div class="gmap_canvas">
-          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=anku%20art%20and%20tattoos%20eindhoven&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          <!-- <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=anku%20art%20and%20tattoos%20eindhoven&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> -->
+          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=anku%20art%20and%20tattoos%20eindhoven&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
           </iframe>
-          <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style><a href="https://google-map-generator.com">embed google maps</a></div></div>
+          <a href="https://google-map-generator.com">embed google maps</a>
+        </div>
+      </div>
     </div>
     <!-- <div class="column item-mid"></div> -->
-    <div class="column item-2">
+    <div class="item_right content">
       <!-- <h3>column 2</h3> -->
       <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nisi dicta sed eaque beatae quibusdam sit autem iure nulla sequi doloremque assumenda cupiditate animi illum optio quos velit officiis voluptates.</p> -->
       <p>

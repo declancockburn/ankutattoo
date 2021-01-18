@@ -1,0 +1,78 @@
+I"
+<!-- 
+    Todo: 
+    1) Want grid/boxes in about to order as column instead of row as screen width decreases.
+    2) In hamburger menu, want menu to disappear once menu item is clicked.
+ -->
+<section id="about">
+  <div class="row-1">
+    <div class="column item-1">
+      <!-- <h3>column 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nisi dicta sed eaque beatae quibusdam sit autem iure nulla sequi doloremque assumenda cupiditate animi illum optio quos velit officiis voluptates.</p> -->
+      <img src="/assets/img/anku_tattooing_1.png" />
+    </div>
+    <!-- <div class="column item-mid"></div> -->
+    <div class="construction">
+      <!-- <h3>column 2</h3> -->
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nisi dicta sed eaque beatae quibusdam sit autem iure nulla sequi doloremque assumenda cupiditate animi illum optio quos velit officiis voluptates.</p> -->
+      <p>
+<h1>UNDER CONSTRUCTION</h1>
+      </p>
+        <!-- In 2020 I came to Eindhoven.  -->
+      <!-- </p> -->
+    </div>
+  </div>
+</section>
+
+<!-- <div class="container">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div> -->
+
+<!-- 
+    Todo: 
+    1) Want grid/boxes in about to order as column instead of row as screen width decreases.
+    2) In hamburger menu, want menu to disappear once menu item is clicked.
+ -->
+<section id="about" class="content_page">
+  <div class="grid">
+    <div class="item_left">
+      <!-- <h3>column 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nisi dicta sed eaque beatae quibusdam sit autem iure nulla sequi doloremque assumenda cupiditate animi illum optio quos velit officiis voluptates.</p> -->
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=anku%20art%20and%20tattoos%20eindhoven&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+          <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style><a href="https://google-map-generator.com">embed google maps</a>
+        </div></div>
+    </div>
+    <!-- <div class="column item-mid"></div> -->
+    <div class="column item-2">
+      <!-- <h3>column 2</h3> -->
+      <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, nisi dicta sed eaque beatae quibusdam sit autem iure nulla sequi doloremque assumenda cupiditate animi illum optio quos velit officiis voluptates.</p> -->
+      <p>
+        Anku Art and Tattoos
+        Torenallee 45, 6e verdieping, 5617 BA Eindhoven
+      </p>
+        <!-- In 2020 I came to Eindhoven.  -->
+      <!-- </p> -->
+    </div>
+  </div>
+</section>
+
+<!-- <div class="container">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+    nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div> -->
+
+:ET

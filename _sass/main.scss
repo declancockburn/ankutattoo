@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import 'variables';
+@import 'globals';
 @import 'hero';
 @import 'header';
 @import 'menu_phone_animations';
@@ -7,27 +9,6 @@
 @import 'about2';
 @import 'social_icons';
 
-html, 
-body {
-    box-sizing: border-box;
-    // font-family: 'Montserrat', sans-serif;
-    font-family: 'Montserrat', serif;
-    background-color: $bg1;
-    // font-family: "Times New Roman", Times, serif;
-    //additional:
-    // height: 100vh;
-    // width: 100vw;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    ///additional
-}
-
-*, *::before, *::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;  
-  }
 
 .container {
     width: 80%;
@@ -53,8 +34,3 @@ body {
         margin: 0.5rem;
     }
 }
-
-.current {
-    color: green
-}
-

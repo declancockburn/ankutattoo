@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+html { font-size: 100%; box-sizing: border-box; }
+
+body { margin: 0; padding: 0; font-family: 'Montserrat', serif; background-color: #dfd8c5; }
+
+*, *::before, *::after { box-sizing: inherit; }
+
+.flex { display: flex; }
+
+.flex-jc-sb { justify-content: space-between; }
+
+.flex-jc-c { justify-content: center; }
+
+.flex-ai-c { align-items: center; }
+
 .hero { height: 100vh; width: 100vw; max-width: 100%; display: flex; justify-content: center; align-items: center; background: url("../img/leaves.png") 0 no-repeat, url("../img/mermaid.png") bottom -10vh right -33vmin no-repeat; background-size: contain; background-color: #dfd8c5; }
 
 @media only screen and (max-aspect-ratio: 3/2) { .hero { background: url("../img/leaves.png") calc(100% - 70vw) no-repeat, url("../img/mermaid.png") bottom -10vh left 65vw no-repeat; background-size: contain; background-color: #dfd8c5; } }
@@ -175,10 +189,6 @@
 
 .sleek__social .btn__sleek--active .fab, .sleek__social .btn:focus .fab, .sleek__social .btn:hover .fab { color: #fff; transform: scale(1); }
 
-html, body { box-sizing: border-box; font-family: 'Montserrat', serif; background-color: #dfd8c5; }
-
-*, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
-
 .container { width: 80%; margin: 2rem auto; }
 
 .container p { margin: 1rem 0; }
@@ -188,7 +198,5 @@ html, body { box-sizing: border-box; font-family: 'Montserrat', serif; backgroun
 #about .image img { border: 0.25rem dotted black; }
 
 #about a { min-width: 25vmax; margin: 0.5rem; }
-
-.current { color: green; }
 
 /*# sourceMappingURL=styles.css.map */

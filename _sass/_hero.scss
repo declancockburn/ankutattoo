@@ -25,7 +25,9 @@
 
     h1 {
         position: relative;
-        font-size: 1rem;
+        // font-size: 1rem;
+        // font-size: 1em;
+        font-size: calc(1vw + 8px);
         text-transform: uppercase;
         text-align: center;
 
@@ -38,10 +40,11 @@
 
         &::after {
             content: 'Eindhoven';
+            font-weight: 500;
             display: block;
             height: 100%;
             opacity: 0;
-            transition: opacity ease-out 250ms; 
+            transition: opacity ease-in-out 300ms; 
         }
 
         &:hover:after {

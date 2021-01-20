@@ -15,8 +15,10 @@
   </head>
   <body>
     {% include nav_menu.html %}
-    {{ content }}
-    <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js"></script>
+    <div class="content_container">
+      {{ content }}
+    </div>
+      <script src="{{site.url}}{{site.baseurl}}/assets/js/main.js"></script>
     <script src="assets/js/font-awesome.js" crossorigin="anonymous" async defer></script>
   </body>
 </html>

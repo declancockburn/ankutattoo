@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "testing.css",
+	"sources": [
+		"testing.scss",
+		"_sass/test_flexboxes.scss"
+	],
+	"sourcesContent": [
+		"@import \"test_flexboxes\";",
+		".content_container {\r\n    display: flex;\r\n    float: left;\r\n    position: relative;\r\n    max-width: 100%;\r\n    flex-direction: column; \r\n    justify-content: space-between;\r\n}\r\n\r\n.content_page {\r\n    min-height: 100vh;\r\n    width: 100vw;\r\n    max-width: 100%;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    background: lightblue;\r\n    border: 3px solid green;\r\n\r\n    .row {\r\n        background: #fff;\r\n        border: 3px solid red;\r\n        position: relative;\r\n        display: flex;\r\n        gap: 10px;\r\n        width: calc(70vw + 200px); \r\n        // height: calc(50vh + 100px);\r\n        max-width: 100%;\r\n        // max-height: 100vh;\r\n        flex-direction: row;\r\n        flex-wrap: wrap;\r\n        justify-content: space-evenly;\r\n        align-items: center;\r\n        text-align: center;\r\n        align-content: center;\r\n        border-radius: 10px;\r\n\r\n        .col1, .col2 {\r\n            display: flex;\r\n            border: 2px solid darkgreen;\r\n            background: lightyellow;\r\n            margin: 0.2rem;\r\n            flex-direction: column;\r\n        }\r\n\r\n        .col1 {\r\n            // flex-grow: 1;\r\n            justify-content: center;\r\n            // width: 60%;\r\n            // min-width: 30vw;\r\n            flex: 1 0 300px;\r\n            max-width: calc(20vw + 300px);\r\n        }\r\n\r\n        .col2 {\r\n            flex: 1 0 300px;\r\n            max-width: 450px;\r\n            // justify-content: flex-end;\r\n        }\r\n    }\r\n}\r\n\r\n\r\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,kBAAkB,CAAC,EACf,OAAO,EAAE,IAAI,EACb,KAAK,EAAE,IAAI,EACX,QAAQ,EAAE,QAAQ,EAClB,SAAS,EAAE,IAAI,EACf,cAAc,EAAE,MAAM,EACtB,eAAe,EAAE,aAAa,GACjC;;AAED,AAAA,aAAa,CAAC,EACV,UAAU,EAAE,KAAK,EACjB,KAAK,EAAE,KAAK,EACZ,SAAS,EAAE,IAAI,EACf,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,MAAM,EACvB,WAAW,EAAE,MAAM,EACnB,UAAU,EAAE,SAAS,EACrB,MAAM,EAAE,eAAe,GA2C1B;;AAnDD,AAUI,aAVS,CAUT,IAAI,CAAC,EACD,UAAU,EAAE,IAAI,EAChB,MAAM,EAAE,aAAa,EACrB,QAAQ,EAAE,QAAQ,EAClB,OAAO,EAAE,IAAI,EACb,GAAG,EAAE,IAAI,EACT,KAAK,EAAE,kBAAkB,EAEzB,SAAS,EAAE,IAAI,EAEf,cAAc,EAAE,GAAG,EACnB,SAAS,EAAE,IAAI,EACf,eAAe,EAAE,YAAY,EAC7B,WAAW,EAAE,MAAM,EACnB,UAAU,EAAE,MAAM,EAClB,aAAa,EAAE,MAAM,EACrB,aAAa,EAAE,IAAI,GAwBtB;;AAlDL,AA4BQ,aA5BK,CAUT,IAAI,CAkBA,KAAK,EA5Bb,aAAa,CAUT,IAAI,CAkBO,KAAK,CAAC,EACT,OAAO,EAAE,IAAI,EACb,MAAM,EAAE,mBAAmB,EAC3B,UAAU,EAAE,WAAW,EACvB,MAAM,EAAE,MAAM,EACd,cAAc,EAAE,MAAM,GACzB;;AAlCT,AAoCQ,aApCK,CAUT,IAAI,CA0BA,KAAK,CAAC,EAEF,eAAe,EAAE,MAAM,EAGvB,IAAI,EAAE,SAAS,EACf,SAAS,EAAE,kBAAkB,GAChC;;AA3CT,AA6CQ,aA7CK,CAUT,IAAI,CAmCA,KAAK,CAAC,EACF,IAAI,EAAE,SAAS,EACf,SAAS,EAAE,KAAK,GAEnB"
+}

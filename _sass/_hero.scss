@@ -17,10 +17,10 @@
     background-color: $bg1;
     @media only screen and (max-aspect-ratio: 3/2) {
         background: 
-            url('../img/leaves.png') calc(100% - 70vw) no-repeat,
-            url('../img/mermaid.png') bottom -10vh left 65vw no-repeat;
-        background-size: contain;
-        background-color: $bg1;
+            url('../img/leaves.png') calc(100% - 70vw) / contain no-repeat,
+            // url('../img/mermaid.png') bottom -10vh left 65vw no-repeat;
+            url('../img/mermaid.png') left 65vw bottom -10vmin / 100vh no-repeat;
+        // background-size: contain;
     }
 
     h1 {

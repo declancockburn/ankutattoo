@@ -1,0 +1,124 @@
+
+.header {
+
+    &__menu {
+
+        span {
+            display: block;
+            position: relative;
+            background: #000000;
+            // background: #dfd8c5;
+            height: 2px;
+            width: 20px;
+            border-radius: 4px;
+            transition: background .8s ease;
+
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                border-radius: 4px;
+                background: #000000;
+                // background: #dfd8c5;
+                transition: background .8s ease;
+            }
+
+            &::before {
+                transform: translateY(-5px);
+            }
+
+            &::after {
+                transform: translateY(5px);
+            }
+
+            &.closed {
+
+                animation: closedMid 0.8s backwards;
+                animation-direction: reverse;
+
+                &::before {
+                    animation: closedTop 0.8s backwards;
+                    animation-direction: reverse;
+                }
+                &::after {
+                    animation: closedBtm 0.8s backwards;
+                    animation-direction: reverse;
+                }
+            }
+
+            &.open {
+
+                border-radius: 50%;
+                animation: pulse 1s;
+    
+                background: #ffffff;
+                animation: openMid 0.8s forwards;
+
+                &::before {
+                    background: #ffffff;
+                    animation: openTop 0.8s forwards;
+                }
+                &::after {
+                    background: #ffffff;
+                    animation: openBtm 0.8s forwards;
+                }
+            }
+        }    
+    }
+}
+
+
+
+
+
+
+// .header {
+
+//     &__menu {
+
+//         >   span {
+//             display: block;
+//             width: 26px;
+//             height: 2px;
+//             background-color: yellow;
+//             color: black;
+//             transition: background .8s ease;
+
+//             &:not(:last-child){
+//             margin-bottom: 5px;
+//             }
+//         > span:first-child {
+//             animation: closedTop 0.8s backwards;
+//             animation-direction: reverse;
+//         }
+//         > span:nth-child(2) {
+//             animation: closedMid 0.8s backwards;
+//             animation-direction: reverse;
+//         }
+//         > span:last-child {
+//             animation: closedBtm 0.8s backwards;
+//             animation-direction: reverse;
+//             }
+//         }
+//         &.open {
+
+//             border-radius: 50%;
+//             animation: pulse 1s;
+
+
+//             > span:first-child {
+//                 background: #ffffff;
+//                 animation: openTop 0.8s forwards;
+//             }
+//             > span:nth-child(2) {
+//                 background: #ffffff;
+//                 animation: openMid 0.8s forwards;
+//             }
+//             > span:last-child {
+//                 background: #ffffff;
+//                 animation: openBtm 0.8s forwards;
+//             }
+//         }
+//     }
+// }

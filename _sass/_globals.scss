@@ -58,6 +58,12 @@ body {
     }
 }
 
+.hide-for-desktop {
+    @include breakpoint-up(medium){
+        display: none;
+    }
+}
+
 
 
 

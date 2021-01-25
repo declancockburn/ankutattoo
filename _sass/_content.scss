@@ -3,6 +3,7 @@
     width: 100vw;
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; //centers items to eachother
 
@@ -17,6 +18,7 @@
         max-width: 100%;
         // max-height: 100vh;
         flex-direction: row;
+
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
@@ -123,6 +125,15 @@
         }
 
     }
+}
+
+.form {
+    display: block;
+    font-size:11px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:200px;
+    margin:2px 0 20px 10px;
 }
 
 // Embedded map

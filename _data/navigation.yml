@@ -1,11 +1,10 @@
 - name: Home
   link: /
 - name: About
-  link: /#about2
+  link: /#about
 - name: Art
   link: /art.html
+- name: Info
+  link: /info.html
 - name: Contact
   link: /contact.html
-- name: Book
-  link: /book.html
-

@@ -1,0 +1,114 @@
+---
+layout: default
+images:
+  - image_path: /assets/img/gallery/0210_Ralph.jpg
+    thumb_path: /assets/img/gallery_thumbs/0210_Ralph.jpg
+    name: 0210_Ralph
+  - image_path: /assets/img/gallery/birdman01.jpg
+    thumb_path: /assets/img/gallery_thumbs/birdman01.jpg
+    name: birdman01
+  - image_path: /assets/img/gallery/CH.jpg
+    thumb_path: /assets/img/gallery_thumbs/CH.jpg
+    name: CH
+  - image_path: /assets/img/gallery/ins1214_1.jpg
+    thumb_path: /assets/img/gallery_thumbs/ins1214_1.jpg
+    name: ins1214_1
+  - image_path: /assets/img/gallery/J_01.jpg
+    thumb_path: /assets/img/gallery_thumbs/J_01.jpg
+    name: J_01
+  - image_path: /assets/img/gallery/lion_front.jpg
+    thumb_path: /assets/img/gallery_thumbs/lion_front.jpg
+    name: lion_front
+  - image_path: /assets/img/gallery/thumb_CH.jpg
+    thumb_path: /assets/img/gallery_thumbs/thumb_CH.jpg
+    name: thumb_CH
+  - image_path: /assets/img/gallery/birds_flowers/2607_1.jpg
+    thumb_path: /assets/img/gallery_thumbs/birds_flowers/2607_1.jpg
+    name: 2607_1
+  - image_path: /assets/img/gallery/birds_flowers/2607_2.jpg
+    thumb_path: /assets/img/gallery_thumbs/birds_flowers/2607_2.jpg
+    name: 2607_2
+  - image_path: /assets/img/gallery/birds_flowers/2607_3.jpg
+    thumb_path: /assets/img/gallery_thumbs/birds_flowers/2607_3.jpg
+    name: 2607_3
+  - image_path: /assets/img/gallery/birds_flowers/2607_4.jpg
+    thumb_path: /assets/img/gallery_thumbs/birds_flowers/2607_4.jpg
+    name: 2607_4
+  - image_path: /assets/img/gallery/bird_arm/Janiece_01.jpg
+    thumb_path: /assets/img/gallery_thumbs/bird_arm/Janiece_01.jpg
+    name: Janiece_01
+  - image_path: /assets/img/gallery/bird_arm/Ja_02.jpg
+    thumb_path: /assets/img/gallery_thumbs/bird_arm/Ja_02.jpg
+    name: Ja_02
+  - image_path: /assets/img/gallery/bird_arm/Ja_04.jpg
+    thumb_path: /assets/img/gallery_thumbs/bird_arm/Ja_04.jpg
+    name: Ja_04
+  - image_path: /assets/img/gallery/bird_arm/Ja_05.jpg
+    thumb_path: /assets/img/gallery_thumbs/bird_arm/Ja_05.jpg
+    name: Ja_05
+  - image_path: /assets/img/gallery/morning_glory/0710_1.jpg
+    thumb_path: /assets/img/gallery_thumbs/morning_glory/0710_1.jpg
+    name: 0710_1
+  - image_path: /assets/img/gallery/morning_glory/0710_2.jpg
+    thumb_path: /assets/img/gallery_thumbs/morning_glory/0710_2.jpg
+    name: 0710_2
+  - image_path: /assets/img/gallery/morning_glory/0710_3.jpg
+    thumb_path: /assets/img/gallery_thumbs/morning_glory/0710_3.jpg
+    name: 0710_3
+  - image_path: /assets/img/gallery/morning_glory/0710_4.jpg
+    thumb_path: /assets/img/gallery_thumbs/morning_glory/0710_4.jpg
+    name: 0710_4
+  - image_path: /assets/img/gallery/morning_glory/0710_5.jpg
+    thumb_path: /assets/img/gallery_thumbs/morning_glory/0710_5.jpg
+    name: 0710_5
+  - image_path: /assets/img/gallery/morning_glory/0710_6.jpg
+    thumb_path: /assets/img/gallery_thumbs/morning_glory/0710_6.jpg
+    name: 0710_6
+  - image_path: /assets/img/gallery/unicorn/unicorn_01.jpg
+    thumb_path: /assets/img/gallery_thumbs/unicorn/unicorn_01.jpg
+    name: unicorn_01
+  - image_path: /assets/img/gallery/unicorn/unicorn_02.jpg
+    thumb_path: /assets/img/gallery_thumbs/unicorn/unicorn_02.jpg
+    name: unicorn_02
+  - image_path: /assets/img/gallery/unicorn/unicorn_031.jpg
+    thumb_path: /assets/img/gallery_thumbs/unicorn/unicorn_031.jpg
+    name: unicorn_031
+  - image_path: /assets/img/gallery/unicorn/unicorn_041.jpg
+    thumb_path: /assets/img/gallery_thumbs/unicorn/unicorn_041.jpg
+    name: unicorn_041
+  - image_path: /assets/img/gallery/unicorn/unicorn_3.jpg
+    thumb_path: /assets/img/gallery_thumbs/unicorn/unicorn_3.jpg
+    name: unicorn_3
+  - image_path: /assets/img/gallery/whale/Whale_1.jpg
+    thumb_path: /assets/img/gallery_thumbs/whale/Whale_1.jpg
+    name: Whale_1
+  - image_path: /assets/img/gallery/whale/Whale_2.jpg
+    thumb_path: /assets/img/gallery_thumbs/whale/Whale_2.jpg
+    name: Whale_2
+  - image_path: /assets/img/gallery/whale/Whale_3.jpg
+    thumb_path: /assets/img/gallery_thumbs/whale/Whale_3.jpg
+    name: Whale_3
+  - image_path: /assets/img/gallery/whale/Whale_4.jpg
+    thumb_path: /assets/img/gallery_thumbs/whale/Whale_4.jpg
+    name: Whale_4
+---
+
+<div id="about" class="content_page">
+  <div class="row">
+    <div id="images-wrapper"> 
+      <ul>
+      {% for image in page.images %}
+        <li>
+          <a href="{{ image.image_path }}" alt="{{ image.name }}">
+            <img src="{{ image.thumb_path }}" alt="{{ image.name }}"/>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/lightbox.js"></script>
+<link rel="stylesheet" href="assets/css/lightbox.css">

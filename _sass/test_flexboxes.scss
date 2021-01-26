@@ -1,7 +1,10 @@
 #images-wrapper {    
     display:inline-block;    
-    margin-right: auto;    
-    margin-left: auto;  
+    list-style-type: none;
+    padding-right: 20px;
+    vertical-align: middle;
+    // margin-right: auto;    
+    // margin-left: auto;  
 
     line-height: 0;       
     -webkit-column-count: 5;    
@@ -20,6 +23,9 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+    }
+    li {
+        
     }
 }
 

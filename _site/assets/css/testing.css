@@ -1,4 +1,4 @@
-#images-wrapper { display: inline-block; margin-right: auto; margin-left: auto; line-height: 0; -webkit-column-count: 5; -webkit-column-gap: 0px; -moz-column-count: 5; -moz-column-gap: 0px; column-count: 5; column-gap: 0px; }
+#images-wrapper { display: inline-block; list-style-type: none; padding-right: 20px; vertical-align: middle; line-height: 0; -webkit-column-count: 5; -webkit-column-gap: 0px; -moz-column-count: 5; -moz-column-gap: 0px; column-count: 5; column-gap: 0px; }
 
 #images-wrapper img { width: 100% !important; height: auto !important; }
 

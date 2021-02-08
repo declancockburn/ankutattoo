@@ -28,7 +28,7 @@ for file in files:
 
 
 
-## Crop already existing height to 300px
+## Crop already existing thumbs height to 300px
 
 orig = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo\assets\img\gallery")
 root = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo")

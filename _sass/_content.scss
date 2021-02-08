@@ -33,6 +33,11 @@
         // flex-shrink: 1;
         // flex-basis: 10vw;
 
+        .info {
+            text-align: left;
+            display: block;
+            margin: 1rem;
+        }
         .header-text {
             font-size: 2rem;
             font-weight: 500;

@@ -56,7 +56,7 @@ Prices are determined per tattoo based on many factors such as size, location on
 <br>
 
 ### MINUMUM
-Due to the hygienic handling, basic costs of the materials, overhead etc. there is minimum rate of € 100.
+Due to the hygienic handling, basic costs of the materials, overhead etc. there is minimum rate of € 90.
 
 <br>
 * * *

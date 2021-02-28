@@ -10,19 +10,34 @@
     // color: #ffffff;
     // position: relative;
 
-    background: 
+
+    background-color: $bg1;
+    // @media only screen and (max-aspect-ratio: 3/2) {
+    //     background: 
+    //         // url('../img/leaves.png') bottom left / contain no-repeat,
+    //         url('../img/leaves.png') 60% 0%,
+    //         // url('../img/mermaid.png') bottom -10vh left 65vw no-repeat;
+    //         url('../img/mermaid.png') left 65vw bottom -10vmin / 100vh no-repeat;
+    //     // background-size: contain;
+    // }
+    @include for-phone-only {
+        background-image: url('../img/leaves.png'), url('../img/mermaid.png') ;
+        background-position: left bottom, top 110% right -15vh;
+        background-size: auto 45vh, auto 45vh;
+        background-repeat: no-repeat, no-repeat;
+    }
+    @include for-tablet-portrait-up {
+        background-image: url('../img/leaves.png'), url('../img/mermaid.png') ;
+        background-position: left bottom, top 110% right -15vh;
+        background-size: auto 60vh, auto 60vh;
+        background-repeat: no-repeat, no-repeat;
+    }
+    @include for-tablet-landscape-up {
+        background: 
         url('../img/leaves.png') 0 no-repeat,
         url('../img/mermaid.png') bottom -10vh right -33vmin no-repeat;
     background-size: contain;
-    background-color: $bg1;
-    @media only screen and (max-aspect-ratio: 3/2) {
-        background: 
-            url('../img/leaves.png') calc(100% - 70vw) / contain no-repeat,
-            // url('../img/mermaid.png') bottom -10vh left 65vw no-repeat;
-            url('../img/mermaid.png') left 65vw bottom -10vmin / 100vh no-repeat;
-        // background-size: contain;
     }
-
     h1 {
         position: relative;
         // font-size: 1rem;

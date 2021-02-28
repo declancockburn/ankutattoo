@@ -1,0 +1,50 @@
+I"_<div class="content_page">
+  <div class="row">
+    
+    Want a price quote?<br />
+    Discuss your ideas for a tattoo?<br />
+    Another question?<br />
+
+    Getting in contact is easy!<br />
+    Send me a message on facebook or instagram (preferred)<br />
+    You can fill in the form below.<br />
+    Or message me on whatsapp/signal/SMS<br />
+    <a href="https://wordstream-files-prod.s3.amazonaws.com/s3fs-public/styles/simple_image/public/images/best-contact-us-pages.png?4FxqJ8XKon25hgvNWUAxfli.flprdvvj&amp;itok=FWzTG2VB">
+    Example contact pg
+    </a>
+    <a href="https://m.me/ankutattooist">
+      Message us on Facebook
+   </a>
+  </div>
+  <br />
+  <div class="row">
+    <div class="form">
+      <form action="https://formspree.io/f/mqkgnweb" method="POST">
+          <label>
+            Your name:<br />
+            <input type="text" name="name" />
+          </label><br />
+        <label>
+          Your email:<br />
+          <input type="text" name="_replyto" />
+        </label><br />
+
+        <label>
+          Subject:<br />
+          <input type="text" name="subject" />
+        </label><br />
+      
+        <!-- your other form fields go here -->
+        <label>
+          Your message:<br />
+          <textarea name="message"></textarea>
+        </label><br />
+
+        <button type="submit">Send</button>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+:ET

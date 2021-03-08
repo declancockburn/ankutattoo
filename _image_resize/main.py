@@ -1,13 +1,17 @@
 from pathlib import Path
 from PIL import Image
 
-orig = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo\assets\img\gallery")
-thumbs = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo\assets\img\gallery_thumbs")
-root = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo")
+img_folder = "flash"
+
+orig = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}")
+thumbs = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}_thumbs")
+root = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo")
+thumbs_sqr = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}_thumbs_sqr")
+
 
 orig_walk = orig.glob('**/*')
 files = [x for x in orig_walk if x.is_file()]
-files = [x for x in files if x.suffix == '.jpg']
+files = [x for x in files if x.suffix in ['.jpg', '.jpeg']]
 
 basewidth = 300
 for file in files:
@@ -30,18 +34,14 @@ for file in files:
 
 ## Crop already existing thumbs height to 300px
 
-orig = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo\assets\img\gallery")
-root = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo")
-thumbs = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo\assets\img\gallery_thumbs")
-thumbs_sqr = Path(r"C:\Users\Declan\Desktop\Website_Trials\ankutattoo\assets\img\gallery_thumbs_sqr")
 
 thumbs_walk = thumbs.glob('**/*')
 
 files = [x for x in thumbs_walk if x.is_file()]
-files = [x for x in files if x.suffix == '.jpg']
+files = [x for x in files if x.suffix in ['.jpg', '.jpeg']]
 
 for file in files:
-# file = files[0]
+
     img = Image.open(file)
     w, h = img.size
     if h > 300:

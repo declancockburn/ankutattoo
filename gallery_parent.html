@@ -1,0 +1,56 @@
+---
+layout: default
+sections:
+  - title: Tattoos
+    link: /gallery_tattoos.html
+    text: Sample selection of some more recent tattoos. Check out my instagram for more.
+  - title: Anku
+    link: /gallery_anku.html
+    text: Your Artist.
+  - title: Flash
+    link: /gallery_flash.html
+    text: Drawings that can become your tattoo
+  - title: Studio
+    link: /gallery_studio.html
+    text: Pictures of my cute little studio in Glasgebouw Strijp-S! 
+---
+
+<div id="about" class="content_page">
+
+  {% for section in page.sections %}
+    <div class="row">
+      <a href="{{ section.link }}" alt="{{ section.title }}">
+        <span class="header-text"><strong>{{ section.title }}</strong></span>
+      </a>
+    </div>
+    <div class="row">
+      {{ section.text }}
+    </div>
+    <div class="row">
+      PIC PIC PIC
+    </div>
+  {% endfor %}
+
+
+  <div class="row">
+    <div id="images-wrapper"> 
+      <!-- <ul> -->
+       
+      {% for image in page.images %}
+      <div class="inner">
+        <!-- <li class="inner"> -->
+          <a href="{{ image.image_path }}" alt="{{ image.name }}">
+            <img src="{{ image.thumb_path }}" alt="{{ image.name }}"/>
+          </a>
+        <!-- </li> -->
+      </div>
+      {% endfor %}
+
+      <!-- </ul> -->
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/lightbox.js"></script>
+<link rel="stylesheet" href="assets/css/lightbox.css">

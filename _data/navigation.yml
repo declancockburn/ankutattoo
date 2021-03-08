@@ -1,10 +1,10 @@
 - name: Home
-  link: /
+  link: /#home
 - name: About
   link: /#about
-- name: Art
-  link: /art.html
+- name: Gallery
+  link: /gallery_parent.html
 - name: Info
   link: /info.html
 - name: Contact
-  link: /contact.html
+  link: /#contact

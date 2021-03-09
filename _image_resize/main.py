@@ -1,7 +1,7 @@
 from pathlib import Path
 from PIL import Image
 
-img_folder = "flash"
+img_folder = "tattoos"
 
 orig = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}")
 thumbs = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}_thumbs")

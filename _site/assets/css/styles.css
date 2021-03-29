@@ -64,15 +64,21 @@ body { margin: 0; padding: 0; font-family: 'Montserrat', serif; line-height: 1.3
 
 .content_page { min-height: 100vh; width: 100vw; max-width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 65px; }
 
-.content_page .row { background: #dfd8c5; border: 5px solid red; position: relative; display: flex; gap: 10px; width: calc(70vw + 200px); max-width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center; align-content: center; border-radius: 10px; }
+.content_page .row { background: #dfd8c5; position: relative; display: flex; gap: 10px; width: calc(70vw + 200px); max-width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center; align-content: center; border-radius: 10px; }
+
+.content_page .row.text { padding: 10px; text-align: center; }
+
+.content_page .row.thumbs { justify-content: center; gap: 0px; }
+
+.content_page .row.thumbs img { width: 200px; }
 
 .content_page .row .info { text-align: left; display: block; margin: 1rem; }
 
 .content_page .row .header-text { font-size: 2rem; font-weight: 500; line-height: 48px; }
 
-.content_page .row .header-text::after { content: ''; display: block; height: 1rem; }
+.content_page .row .header-text::after { content: ''; display: block; height: 0.3rem; }
 
-.content_page .row .col1, .content_page .row .col2 { display: flex; border: 2px solid darkgreen; margin: 0.2rem; flex-direction: column; }
+.content_page .row .col1, .content_page .row .col2 { display: flex; margin: 0.2rem; padding: 0.2rem; flex-direction: column; }
 
 .content_page .row .about.col1 { min-width: 35vw; flex: 1 0.2 30%; height: 100%; text-align: left; max-width: 400px; max-height: 400px; overflow: hidden; }
 

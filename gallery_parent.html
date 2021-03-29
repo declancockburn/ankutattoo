@@ -3,16 +3,44 @@ layout: default
 sections:
   - title: Tattoos
     link: /gallery_tattoos.html
-    text: Sample selection of some more recent tattoos. Check out my instagram for more.
+    text: Sample selection of some more recent tattoos. Check out my instagram for more!
+    images:
+    - thumb_path: /assets/img/tattoos_thumbs_sqr/0210_Ralph.jpg
+      name: 0210_Ralph
+    - thumb_path: /assets/img/tattoos_thumbs_sqr/0710_2.jpg
+      name: 0710_2
+    - thumb_path: /assets/img/tattoos_thumbs_sqr/127603027_3302085153253361_6783802441358842771_n.jpg
+      name: 127603027_3302085153253361_6783802441358842771_n
   - title: Anku
     link: /gallery_anku.html
     text: Your Artist.
+    images:
+    - thumb_path: /assets/img/anku_thumbs_sqr/anku_armpit_showing-off.jpg
+      name: anku_armpit_showing-off
+    - thumb_path: /assets/img/anku_thumbs_sqr/anku_arms_front.jpg
+      name: anku_arms_front
+    - thumb_path: /assets/img/anku_thumbs_sqr/anku_back_orig.jpg
+      name: anku_back_orig
   - title: Flash
     link: /gallery_flash.html
     text: Drawings that can become your tattoo
+    images:
+    - thumb_path: /assets/img/flash_thumbs_sqr/102561081_1177441519375340_1915328097059766551_n.jpg
+      name: 102561081_1177441519375340_1915328097059766551_n
+    - thumb_path: /assets/img/flash_thumbs_sqr/120596693_672241753407017_8148905096988925889_n.jpg
+      name: 120596693_672241753407017_8148905096988925889_n
+    - thumb_path: /assets/img/flash_thumbs_sqr/120893192_1576719995832104_1228008451914973153_n.jpg
+      name: 120893192_1576719995832104_1228008451914973153_n
   - title: Studio
     link: /gallery_studio.html
     text: Pictures of my cute little studio in Glasgebouw Strijp-S! 
+    images:
+    - thumb_path: /assets/img/studio_thumbs_sqr/IMG_4655.jpeg
+      name: IMG_4655
+    - thumb_path: /assets/img/studio_thumbs_sqr/IMG_4656.jpeg
+      name: IMG_4656
+    - thumb_path: /assets/img/studio_thumbs_sqr/IMG_4657.jpeg
+      name: IMG_4657
 ---
 
 <div id="about" class="content_page">
@@ -23,11 +51,19 @@ sections:
         <span class="header-text"><strong>{{ section.title }}</strong></span>
       </a>
     </div>
-    <div class="row">
-      {{ section.text }}
+    <div class="row text">
+      <p>{{ section.text }}</p>
+    </div>
+    <div class="row thumbs">
+      {% for image in section.images %}
+        <a href="{{ section.link }}" alt="{{ section.title }}">
+          <img src="{{ image.thumb_path }}" alt="{{ image.name }}"/>
+        </a>
+      {% endfor %}
     </div>
     <div class="row">
-      PIC PIC PIC
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
     </div>
   {% endfor %}
 

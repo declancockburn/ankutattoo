@@ -1,0 +1,63 @@
+---
+layout: default
+images:
+- image_path: /assets/img/studio/180607-Foto-glasgebouw.jpg
+  thumb_path: /assets/img/studio_thumbs_sqr/180607-Foto-glasgebouw.jpg
+  name: 180607-Foto-glasgebouw
+- image_path: /assets/img/studio/glasgebouw_01_ben_van_veelen.jpg
+  thumb_path: /assets/img/studio_thumbs_sqr/glasgebouw_01_ben_van_veelen.jpg
+  name: glasgebouw_01_ben_van_veelen
+- image_path: /assets/img/studio/IMG_4626.jpeg
+  thumb_path: /assets/img/studio_thumbs_sqr/IMG_4626.jpeg
+  name: IMG_4626
+- image_path: /assets/img/studio/IMG_4651.jpeg
+  thumb_path: /assets/img/studio_thumbs_sqr/IMG_4651.jpeg
+  name: IMG_4651
+- image_path: /assets/img/studio/IMG_4652.jpeg
+  thumb_path: /assets/img/studio_thumbs_sqr/IMG_4652.jpeg
+  name: IMG_4652
+- image_path: /assets/img/studio/IMG_4653.jpeg
+  thumb_path: /assets/img/studio_thumbs_sqr/IMG_4653.jpeg
+  name: IMG_4653
+- image_path: /assets/img/studio/IMG_4655.jpeg
+  thumb_path: /assets/img/studio_thumbs_sqr/IMG_4655.jpeg
+  name: IMG_4655
+- image_path: /assets/img/studio/IMG_4656.jpeg
+  thumb_path: /assets/img/studio_thumbs_sqr/IMG_4656.jpeg
+  name: IMG_4656
+- image_path: /assets/img/studio/IMG_4657.jpeg
+  thumb_path: /assets/img/studio_thumbs_sqr/IMG_4657.jpeg
+  name: IMG_4657
+
+---
+
+<div id="about" class="content_page">
+  <div class="row">
+    <span class="header-text"><strong>Tattoo</strong></span>
+  </div>
+  <div class="row">
+    Sample selection of some more recent tattoos. Check out my instagram for more.
+  </div>
+  
+  <div class="row">
+    <div id="images-wrapper"> 
+      <!-- <ul> -->
+       
+      {% for image in page.images %}
+      <div class="inner">
+        <!-- <li class="inner"> -->
+          <a href="{{ image.image_path }}" alt="{{ image.name }}">
+            <img src="{{ image.thumb_path }}" alt="{{ image.name }}"/>
+          </a>
+        <!-- </li> -->
+      </div>
+      {% endfor %}
+
+      <!-- </ul> -->
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/lightbox.js"></script>
+<link rel="stylesheet" href="assets/css/lightbox.css">

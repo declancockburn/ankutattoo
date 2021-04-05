@@ -1,0 +1,36 @@
+.about_container{
+    // min-height: 100vh;
+    // width: 100vw;
+    border: 5px solid blueviolet;
+    // grid-template-columns: 40px 50px auto 50px 40px;
+    // grid-template-rows: 25% 100px auto;
+    display: grid;
+    grid-template-columns: fr 20vw fr 30vw fr;
+    grid-template-rows: 65px auto 50vh auto;
+    grid-template-areas: 
+      "header header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+}
+
+.item1 {
+    border: 2px solid darkgreen;
+
+    img {
+        height: auto;
+        max-width: 400px;
+        max-height: 400px;
+        object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.item2 {
+    border: 2px solid blue;
+    min-width: 200px;
+    max-width: 400px;
+    align-items: center;
+}
+.item3 {
+    border: 2px solid darkred;
+}

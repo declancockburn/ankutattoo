@@ -64,7 +64,7 @@ body { margin: 0; padding: 0; font-family: 'Montserrat', serif; line-height: 1.3
 
 .content_page { min-height: 100vh; width: 100vw; max-width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 65px; }
 
-.content_page .row { background: #dfd8c5; position: relative; display: flex; gap: 10px; width: calc(70vw + 200px); max-width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center; align-content: center; border-radius: 10px; }
+.content_page .row { background: #dfd8c5; border: 5px solid red; position: relative; display: flex; gap: 10px; width: calc(70vw + 200px); max-width: 100%; flex-direction: row; flex-wrap: wrap; justify-content: space-evenly; align-items: center; align-content: center; border-radius: 10px; }
 
 .content_page .row.text { padding: 10px; text-align: center; }
 
@@ -82,7 +82,7 @@ body { margin: 0; padding: 0; font-family: 'Montserrat', serif; line-height: 1.3
 
 .content_page .row .header-text::after { content: ''; display: block; height: 0.3rem; }
 
-.content_page .row .col1, .content_page .row .col2 { display: flex; margin: 0.2rem; padding: 0.2rem; flex-direction: column; }
+.content_page .row .col1, .content_page .row .col2 { display: flex; border: 2px solid darkgreen; margin: 0.2rem; padding: 0.2rem; flex-direction: column; }
 
 .content_page .row .about.col1 { min-width: 35vw; flex: 1 0.2 30%; height: 100%; text-align: left; max-width: 400px; max-height: 400px; overflow: hidden; }
 
@@ -115,6 +115,16 @@ body { margin: 0; padding: 0; font-family: 'Montserrat', serif; line-height: 1.3
 .myimg { width: calc(30% + 200px); border-radius: 2%; }
 
 .gmap_canvas { display: flex; flex-grow: 1; width: 100%; height: 100%; max-width: 700px; min-height: 60vh; border: none; margin: 0; padding: 0; overflow: hidden; background: none !important; }
+
+.about_container { border: 5px solid blueviolet; display: grid; grid-template-columns: fr 20vw fr 30vw fr; grid-template-rows: 65px auto 50vh auto; grid-template-areas: "header header header header header" "main main . sidebar" "footer footer footer footer"; }
+
+.item1 { border: 2px solid darkgreen; }
+
+.item1 img { height: auto; max-width: 400px; max-height: 400px; object-fit: contain; margin-left: auto; margin-right: auto; }
+
+.item2 { border: 2px solid blue; min-width: 200px; max-width: 400px; align-items: center; }
+
+.item3 { border: 2px solid darkred; }
 
 .main-header { position: fixed; display: flex; height: 65px; width: 100vw; padding: 0 10vw; color: #000000; z-index: 1; transition: 0.4s ease-out; }
 

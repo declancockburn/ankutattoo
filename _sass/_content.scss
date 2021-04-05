@@ -10,7 +10,7 @@
 
     .row {
         background: $bg1;
-        // border: 5px solid red;
+        border: 5px solid red;
         position: relative;
         display: flex;
         gap: 10px;
@@ -73,7 +73,7 @@
         // }
         .col1, .col2 {    
             display: flex;
-            // border: 2px solid darkgreen;
+            border: 2px solid darkgreen;
             margin: 0.2rem;
             padding: 0.2rem;
             flex-direction: column;

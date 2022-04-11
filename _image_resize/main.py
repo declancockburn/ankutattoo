@@ -1,17 +1,24 @@
 from pathlib import Path
 from PIL import Image
 
-img_folder = "tattoos"
+img_folder = "flash"
 
 orig = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}")
 thumbs = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}_thumbs")
 root = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo")
 thumbs_sqr = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\ankutattoo\\assets\\img\\{img_folder}_thumbs_sqr")
 
+# img_folder = "flash"
+#
+# orig = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\new_website_photos_2022\\img\\{img_folder}")
+# thumbs = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\new_website_photos_2022\\img\\{img_folder}_thumbs")
+# root = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials")
+# thumbs_sqr = Path(f"C:\\Users\\Declan\\Desktop\\Website_Trials\\new_website_photos_2022\\img\\{img_folder}_thumbs_sqr")
+
 
 orig_walk = orig.glob('**/*')
 files = [x for x in orig_walk if x.is_file()]
-files = [x for x in files if x.suffix in ['.jpg', '.jpeg']]
+files = [x for x in files if x.suffix.lower() in ['.jpg', '.jpeg']]
 
 basewidth = 300
 for file in files:
@@ -38,7 +45,7 @@ for file in files:
 thumbs_walk = thumbs.glob('**/*')
 
 files = [x for x in thumbs_walk if x.is_file()]
-files = [x for x in files if x.suffix in ['.jpg', '.jpeg']]
+files = [x for x in files if x.suffix.lower() in ['.jpg', '.jpeg']]
 
 for file in files:
 

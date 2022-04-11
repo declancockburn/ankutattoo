@@ -1,48 +1,15 @@
 ---
 layout: default
 images:
-- image_path: /assets/img/flash/102561081_1177441519375340_1915328097059766551_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/102561081_1177441519375340_1915328097059766551_n.jpg
-  name: 102561081_1177441519375340_1915328097059766551_n
-- image_path: /assets/img/flash/120596693_672241753407017_8148905096988925889_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/120596693_672241753407017_8148905096988925889_n.jpg
-  name: 120596693_672241753407017_8148905096988925889_n
-- image_path: /assets/img/flash/120893192_1576719995832104_1228008451914973153_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/120893192_1576719995832104_1228008451914973153_n.jpg
-  name: 120893192_1576719995832104_1228008451914973153_n
-- image_path: /assets/img/flash/121568833_2440769682886638_549497826220958202_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/121568833_2440769682886638_549497826220958202_n.jpg
-  name: 121568833_2440769682886638_549497826220958202_n
-- image_path: /assets/img/flash/122155489_663824781189877_2153996058798210727_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/122155489_663824781189877_2153996058798210727_n.jpg
-  name: 122155489_663824781189877_2153996058798210727_n
-- image_path: /assets/img/flash/123143070_343491490283381_4189903097541071386_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/123143070_343491490283381_4189903097541071386_n.jpg
-  name: 123143070_343491490283381_4189903097541071386_n
-- image_path: /assets/img/flash/131243918_2180143122130593_7715936551698552255_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/131243918_2180143122130593_7715936551698552255_n.jpg
-  name: 131243918_2180143122130593_7715936551698552255_n
-- image_path: /assets/img/flash/149841325_1534178723438067_220412255009016491_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/149841325_1534178723438067_220412255009016491_n.jpg
-  name: 149841325_1534178723438067_220412255009016491_n
-- image_path: /assets/img/flash/153309986_177123690840911_6507126565584316045_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/153309986_177123690840911_6507126565584316045_n.jpg
-  name: 153309986_177123690840911_6507126565584316045_n
-- image_path: /assets/img/flash/66398354_2429652700602376_4609505731743844610_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/66398354_2429652700602376_4609505731743844610_n.jpg
-  name: 66398354_2429652700602376_4609505731743844610_n
-- image_path: /assets/img/flash/67266315_2300601816856375_3986926898591563776_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/67266315_2300601816856375_3986926898591563776_n.jpg
-  name: 67266315_2300601816856375_3986926898591563776_n
-- image_path: /assets/img/flash/67644805_2313812938868596_5981867301241094144_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/67644805_2313812938868596_5981867301241094144_n.jpg
-  name: 67644805_2313812938868596_5981867301241094144_n
-- image_path: /assets/img/flash/67913259_2316665801916643_3740104443874508800_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/67913259_2316665801916643_3740104443874508800_n.jpg
-  name: 67913259_2316665801916643_3740104443874508800_n
-- image_path: /assets/img/flash/79818116_2422370718012817_891785843742605312_n.jpg
-  thumb_path: /assets/img/flash_thumbs_sqr/79818116_2422370718012817_891785843742605312_n.jpg
-  name: 79818116_2422370718012817_891785843742605312_n
+- image_path: /assets/img/flash/Left_mermaid.jpg
+  thumb_path: /assets/img/flash_thumbs_sqr/Left_mermaid.jpg
+  name: Left_mermaid
+- image_path: /assets/img/flash/Middle_mermaid.jpg
+  thumb_path: /assets/img/flash_thumbs_sqr/Middle_mermaid.jpg
+  name: Middle_mermaid
+- image_path: /assets/img/flash/Right_mermaid.jpg
+  thumb_path: /assets/img/flash_thumbs_sqr/Right_mermaid.jpg
+  name: Right_mermaid
 
 ---
 
@@ -64,9 +31,9 @@ images:
       {% for image in page.images %}
       <div class="inner">
         <!-- <li class="inner"> -->
-          <a href="{{ image.image_path }}" alt="{{ image.name }}">
+          <!-- <a href="{{ image.image_path }}" alt="{{ image.name }}"> -->
             <img src="{{ image.  thumb_path }}" alt="{{ image.name }}"/>
-          </a>
+          <!-- </a> -->
         <!-- </li> -->
       </div>
       {% endfor %}
@@ -77,5 +44,5 @@ images:
 </div>
 
 
-<script type="text/javascript" src="assets/js/lightbox.js"></script>
-<link rel="stylesheet" href="assets/css/lightbox.css">
+<!-- <script type="text/javascript" src="assets/js/lightbox.js"></script> -->
+<!-- <link rel="stylesheet" href="assets/css/lightbox.css"> -->

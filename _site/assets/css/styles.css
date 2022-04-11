@@ -28,7 +28,13 @@
 
 html { font-size: 100%; box-sizing: border-box; }
 
-body { margin: 0; padding: 0; font-family: 'Montserrat', serif; line-height: 1.3; background-color: #dfd8c5; }
+body { margin: 0; padding: 0; font-family: 'Montserrat', serif; line-height: 1.3; background-color: #dfd8c5; /* unvisited link */ /* visited link */ /* mouse over link */ }
+
+body a:link { color: black; text-decoration: none; }
+
+body a:visited { color: #4b4b4b; }
+
+body a:hover { color: white; }
 
 *, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
 
